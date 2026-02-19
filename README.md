@@ -1,46 +1,32 @@
-# Astro Starter Kit: Basics
+# Eren Terakye — Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+Personal portfolio and digital business card built with Astro and Tailwind CSS.
+
+**Live:** https://erenterakye.com
+
+## Stack
+
+- [Astro](https://astro.build) — static site framework
+- [Tailwind CSS v4](https://tailwindcss.com) — utility-first styling
+- [Inter](https://fonts.google.com/specimen/Inter) — typeface
+
+## Features
+
+- EN / TR language support via Astro i18n
+- Dark / light mode with system preference detection and manual toggle
+- Scroll-triggered fade-in animations
+- SEO — meta description, Open Graph, Twitter Card, canonical URL
+- Custom favicon, 404 page, robots.txt
+
+## Project Structure
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+src/
+├── components/
+│   ├── LanguagePicker.astro
+│   └── ThemeToggle.astro
+├── layouts/
+│   └── Layout.astro
+├── pages/
+│   ├── index.astro       (English /)
+│content = 
