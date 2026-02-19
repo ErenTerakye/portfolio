@@ -1,0 +1,17 @@
+---
+interface Props {
+  lang: 'en' | 'tr';
+}
+
+const { lang } = Astro.props;
+const targetHref = lang === 'en' ? '/tr/' : '/';
+const targetLabel = lang === 'en' ? 'TR' : 'EN';
+---
+
+<a
+  href={targetHref}
+  aria-label={`Switch language to ${targetLabel}`}
+  class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-500 hover:bg-slate-200 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-slate-50 transition-colors duration-200"
+>
+  {targetLabel}
+</a>

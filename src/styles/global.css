@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+/* Tailwind v4: class-based dark mode strategy */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Tailwind v4: theme extensions */
+@theme {
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* ── Scroll fade-in animation ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

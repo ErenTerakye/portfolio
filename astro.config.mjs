@@ -5,7 +5,15 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://erenterakye.com',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'tr'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
   vite: {
-    plugins: [tailwindcss()]
-  }
+    plugins: [tailwindcss()],
+  },
 });

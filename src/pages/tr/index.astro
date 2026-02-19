@@ -1,30 +1,30 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ThemeToggle from '../components/ThemeToggle.astro';
-import LanguagePicker from '../components/LanguagePicker.astro';
+import Layout from '../../layouts/Layout.astro';
+import ThemeToggle from '../../components/ThemeToggle.astro';
+import LanguagePicker from '../../components/LanguagePicker.astro';
 ---
 
-<Layout title="Eren Terakye — Portfolio" lang="en">
+<Layout title="Eren Terakye — Portfolyo" lang="tr">
   <main class="mx-auto max-w-3xl px-6 py-20">
 
     <!-- ─── Header / Hero ─────────────────────────────────── -->
     <section class="pb-20 fade-in visible">
       <div class="flex justify-end gap-1 mb-12">
-        <LanguagePicker lang="en" />
+        <LanguagePicker lang="tr" />
         <ThemeToggle />
       </div>
 
       <h1 class="text-4xl sm:text-5xl font-black leading-tight text-slate-900 dark:text-slate-50 mb-6">
-        Hi, I'm Eren.
+        Merhaba, ben Eren.
       </h1>
 
       <p class="text-lg text-slate-500 dark:text-slate-400 leading-relaxed mb-10 max-w-2xl">
-        I'm a 3rd-year Computer Engineering student at Eskişehir Osmangazi University
+        Eskişehir Osmangazi Üniversitesi'nde 3. sınıf Bilgisayar Mühendisliği öğrencisiyim
         <span class="text-slate-700 dark:text-slate-300 font-medium">(GPA: 3.10)</span>.
-        I focus on AI, data science, and coding with Python,
-        and care about writing clean, maintainable code.
-        I'm currently looking for internship positions for the
-        <span class="text-slate-700 dark:text-slate-300 font-medium">summer of 2026</span>.
+        Yapay zeka, veri bilimi ve Python ile kodlama üzerine
+        odaklanıyor; temiz, sürdürülebilir kod mimarileri yazmayı önemsiyorum.
+        Şu anda <span class="text-slate-700 dark:text-slate-300 font-medium">2026 yaz dönemi</span> için
+        stajyer mühendis pozisyonları arıyorum.
       </p>
 
       <div class="flex flex-wrap gap-3">
@@ -36,7 +36,7 @@ import LanguagePicker from '../components/LanguagePicker.astro';
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
             <polyline points="22,6 12,13 2,6" />
           </svg>
-          Get in Touch
+          İletişime Geç
         </a>
 
         <a
@@ -65,13 +65,13 @@ import LanguagePicker from '../components/LanguagePicker.astro';
       </div>
     </section>
 
-    <!-- ─── Skills ───────────────────────────────────────── -->
+    <!-- ─── Beceriler ─────────────────────────────────────── -->
     <section class="pb-20 fade-in">
       <h2 class="text-2xl font-black leading-tight text-slate-900 dark:text-slate-50 mb-6">
-        Skills
+        Beceriler
       </h2>
       <div class="flex flex-wrap gap-2">
-        {['Python', 'C++', 'Algorithms', 'Machine Learning', 'AI', 'Data Science'].map((skill) => (
+        {['Python', 'C++', 'Algoritmalar', 'Makine Öğrenimi', 'Yapay Zeka', 'Veri Bilimi'].map((skill) => (
           <span class="text-sm font-medium px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800">
             {skill}
           </span>
@@ -79,39 +79,39 @@ import LanguagePicker from '../components/LanguagePicker.astro';
       </div>
     </section>
 
-    <!-- ─── Background & Education ───────────────────────── -->
+    <!-- ─── Geçmiş & Eğitim ───────────────────────────────── -->
     <section class="pb-20 fade-in">
       <h2 class="text-2xl font-black leading-tight text-slate-900 dark:text-slate-50 mb-8">
-        Background & Education
+        Geçmiş & Eğitim
       </h2>
 
       <ol class="relative border-l border-slate-200 dark:border-slate-800 ml-2 flex flex-col gap-8">
 
-        <!-- Education (most prominent) -->
+        <!-- Eğitim (en belirgin) -->
         <li class="pl-6 relative">
           <span class="absolute -left-[7px] top-1 w-3.5 h-3.5 rounded-full bg-indigo-600 dark:bg-indigo-400 ring-4 ring-slate-50 dark:ring-slate-900"></span>
           <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-400 mb-1">
-            Education — 2023 – Present
+            Eğitim — 2023 – Devam Ediyor
           </p>
           <h3 class="font-bold text-slate-900 dark:text-slate-50">
-            Eskişehir Osmangazi University
+            Eskişehir Osmangazi Üniversitesi
           </h3>
           <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
-            Bachelor's Degree, Computer Engineering
+            Lisans Derecesi, Bilgisayar Mühendisliği
           </p>
           <p class="text-sm font-medium text-slate-700 dark:text-slate-300 mt-0.5">
             GPA: 3.10
           </p>
         </li>
 
-        <!-- Certificates -->
+        <!-- Sertifikalar -->
         <li class="pl-6 relative">
           <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full border-2 border-indigo-400 dark:border-indigo-500 bg-slate-50 dark:bg-slate-900 ring-4 ring-slate-50 dark:ring-slate-900"></span>
           <p class="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 mb-1">
-            Certificate — In Progress
+            Sertifika — Devam Ediyor
           </p>
           <h3 class="font-bold text-slate-900 dark:text-slate-50">
-            Building AI Certificate
+            Building AI Sertifikası
           </h3>
           <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             University of Helsinki
@@ -121,10 +121,10 @@ import LanguagePicker from '../components/LanguagePicker.astro';
         <li class="pl-6 relative">
           <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-indigo-600 dark:bg-indigo-400 ring-4 ring-slate-50 dark:ring-slate-900"></span>
           <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-400 mb-1">
-            Certificate — January 2026
+            Sertifika — Ocak 2026
           </p>
           <h3 class="font-bold text-slate-900 dark:text-slate-50">
-            Elements of AI Certificate
+            Elements of AI Sertifikası
           </h3>
           <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             University of Helsinki
@@ -134,27 +134,27 @@ import LanguagePicker from '../components/LanguagePicker.astro';
         <li class="pl-6 relative">
           <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-indigo-600 dark:bg-indigo-400 ring-4 ring-slate-50 dark:ring-slate-900"></span>
           <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-400 mb-1">
-            Certificate — December 2025
+            Sertifika — Aralık 2025
           </p>
           <h3 class="font-bold text-slate-900 dark:text-slate-50">
-            Kaggle Python Certificate
+            Kaggle Python Sertifikası
           </h3>
           <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
             Kaggle
           </p>
         </li>
 
-        <!-- Experience -->
+        <!-- Deneyim -->
         <li class="pl-6 relative">
           <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-slate-50 dark:ring-slate-900"></span>
           <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-1">
-            Experience — Summer 2025
+            Deneyim — Yaz 2025
           </p>
           <h3 class="font-bold text-slate-900 dark:text-slate-50">
             Work and Travel
           </h3>
           <p class="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
-            Valleyfair, Minnesota, USA — Cultural exchange and adapting to an international work environment.
+            Valleyfair, Minnesota, ABD — Kültürel değişim ve uluslararası iş ortamına adaptasyon deneyimi.
           </p>
         </li>
 
@@ -170,12 +170,11 @@ import LanguagePicker from '../components/LanguagePicker.astro';
         &copy; {new Date().getFullYear()} Eren Terakye
       </p>
       <p class="text-sm text-slate-400 dark:text-slate-500">
-        Built with
         <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline">Astro</a>
         &amp;
         <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline">Tailwind CSS</a>
+        ile oluşturuldu
       </p>
     </div>
   </footer>
 </Layout>
-
